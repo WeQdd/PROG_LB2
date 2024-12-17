@@ -14,7 +14,6 @@ def get_weather_data(place, api_key=None):
         'feels_like': data['main']['feels_like'],
         'timezone': f'UTC{data["timezone"] // 3600:+}'
     }
-    
     return result
 
 if __name__ == '__main__':

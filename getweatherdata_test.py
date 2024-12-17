@@ -11,9 +11,7 @@ def test_without_key():
 
 
 def test_in_riga():
-    assert getweatherdata.get_weather_data("Riga",
-                                           api_key=key) is not None, \
-        " Type of response is not none while using the key "
+    assert isinstance(getweatherdata.get_weather_data("Riga", api_key=key), dict)
 
 
 def test_type_of_res():
